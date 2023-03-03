@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projelerim</title>
+    <style>
+ * {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%; 
+    }
+
+
+#ananav {
+
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    overflow: hidden;
+}
+
+.logo {
+  width: 10%;
+}
+
+#ananav ul {
+    list-style: none;
+    text-align: center;
+   
+  }
+
+  #ananav ul li {
+    display: inline-block;
+    padding: 10px;
+  }
+  #ananav ul li a {
+   text-decoration: none;
+    color: beige;
+    position: relative;
+    padding: 1rem;
+    font-size: larger;
+    letter-spacing: 3px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif
+  }
+
+  .logo {
+    width: 3%;
+    float: left;
+    padding: 5px;
+  }
+
+  .logo img {
+    width: 100%;
+    margin-left: 1rem;
+  }
+  body {
+    background-image: url(./galeri/bg.jpeg);
+    width: 100%;
+  }
+  .container {
+    width: 100%;
+    position: absolute;
+    top: 100px;
+
+    
+  }
+  .gorsel {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+  .box1 {
+    width: 60%;
+    height: 300px;
+    background-image: url(./galeri/proje1.jpeg);
+    background-size: cover;
+    border: 1px solid black;
+    margin: 5px;
+
+  }
+
+  .box2 {
+    width: 60%;
+    height: 300px;
+    background-image: url(./galeri/proje2.jpeg);
+    background-size: cover;
+    border: 1px solid black;
+    margin: 5px;
+
+  }
+
+  .box3 {
+    width: 60%;
+    height: 300px;
+    background-image: url(./galeri/proje3.jpeg);
+    background-size: cover;
+    border: 1px solid black;
+    margin: 5px;
+
+  }
+
+  .box4 {
+    width: 60%;
+    height: 300px;
+    background-image: url(./galeri/proje4.jpeg);
+    background-size: cover;
+    border: 1px solid black;
+    margin: 5px;
+
+  }
+
+  
+  .grup {
+    display: flex;
+    width: 100%;
+  }
+
+  .yazi{
+    width: 30%;
+    text-align: center;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 5%;
+    margin-top: 10px;
+  }
+
+  nav ul li a::after {
+    content: '';
+    position: absolute;
+    background-color: white;
+    height: 3px;
+    top: 45px;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    transition: all 1s;
+
+}
+
+
+nav ul li a:hover::after {
+    width: 100%;
+
+}
+
+
+
+    </style>
+
+</head>
+<body>
+
+    <nav id="ananav">
+        <div class="logo"><a href="index.html"><img src="./galeri/logo.png" alt="logo" width="5px"></div>
+        <ul>
+            <li><a href="./index.html">Anasayfa</a></li>
+            <li><a href="./hakkımda.html">Hakkımda</a></li>
+            <li><a href="./iletisim.html">iletisim</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="gorsel">
+
+            <div class="grup">
+            <div class="box1"></div>
+            <div class="yazi"><p>Örnek 1</p>
+              <br>
+            <p>Navbar oluşturuldu / Resim eklendi / Kutu oluşumu yapıldı.</p>
+          </div>
+
+            </div>
+
+            <div class="grup">
+            <div class="box2"></div>
+            <div class="yazi"><p>Örnek 2</p>
+              <br>
+              <p>Tablo oluşturuldu / Renk ve yazı tipleri özelleştirildi / Logo eklendi.</p>
+            </div>
+             </div>
+
+
+            <div class="grup">
+            <div class="box3"></div>
+            <div class="yazi"><p>Site Örneği </p>
+              <br>
+            <p>Bootstrap ile teknoloji ve oyun sitesi tasarım örneği.</p>
+          </div>
+            </div>
+
+            <div class="grup">
+            <div class="box4"></div>
+            <div class="yazi"><p>Site Örneği 2 </p>
+              <br>
+              <p>Fotoğrafçılık sitesi tasarımı örneği / Navbar, Banner ve çeşitli fotoğraf örnekleri içerir. </p>
+            </div>
+            </div>
+
+        </div>
+    </div>
+    
+</body>
+</html>

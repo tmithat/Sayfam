@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hakkımda</title>
+
+    <style>
+     * {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%; 
+    }
+
+
+#ananav {
+
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    overflow: hidden;
+}
+
+.logo {
+  width: 10%;
+}
+
+#ananav ul {
+    list-style: none;
+    text-align: center;
+   
+  }
+
+  #ananav ul li {
+    display: inline-block;
+    padding: 10px;
+  }
+  #ananav ul li a {
+    text-decoration: none;
+    position: relative;
+    color: beige;
+    padding: 1rem;
+    font-size: larger;
+    letter-spacing: 3px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif
+  }
+
+  .logo {
+    width: 3%;
+    float: left;
+    padding: 5px;
+  }
+
+  .logo img {
+    width: 100%;
+    margin-left: 1rem;
+  }
+  
+  body {
+    background-image: url(./galeri/bg.jpeg);
+    width: 100%;
+  }
+  .container {
+    width: 90%;
+    position: absolute;
+    top: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 150px;
+  }
+
+  .foto {
+    border: 1px solid black;
+    width: 400px;
+    background-image: url(./galeri/resim1.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 400px;
+    border-radius: 50%;
+    margin-right: 20px;
+    
+  }
+  .yazi {
+    text-align: justify;
+    width: 30%;
+
+  }
+
+  nav ul li a::after {
+    content: '';
+    position: absolute;
+    background-color: white;
+    height: 3px;
+    top: 45px;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    transition: all 1s;
+
+}
+
+
+nav ul li a:hover::after {
+    width: 100%;
+
+}
+
+
+    </style>
+</head>
+<body>
+
+    <nav id="ananav">
+        <div class="logo"><a href="index.html"><img src="./galeri/logo.png" alt="logo" width="5px"></div>
+        <ul>
+            <li><a href="./index.html">Anasayfa</a></li>
+            <li><a href="./projelerim.html">Projelerim</a></li>
+            <li><a href="./iletisim.html">iletisim</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="foto">
+
+        </div>
+        <div class="yazi">
+            <p>Merhaba! sayfama hoşgeldiniz ben Mithat Tabakoğlu, 26 yaşındayım. Yunanistan Gümülcinede doğdum, ilkokul orta okul ve lise eğitimimi Bahçeşehir Kolejinde tamamladım, Bahçeşehir Üniversitesi Uluslararası Ticaret ve İşletmecilik bölümü lisans mezunuyum. Ana dilim türkçe ve iyi seviyede ingilizceye sahibim. Hali hazırda dericilik sektöründe çalışıp akabinde yazılım eğitimi almaktayım.   </p>
+        </div>
+    </div>
+    
+</body>
+</html>

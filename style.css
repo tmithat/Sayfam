@@ -1,0 +1,80 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%; 
+    }
+
+
+#ananav {
+
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    overflow: hidden;
+}
+
+.logo {
+  width: 10%;
+}
+
+#ananav ul {
+    list-style: none;
+    text-align: center;
+   
+  }
+
+  #ananav ul li {
+    display: inline-block;
+    padding: 10px;
+  }
+  #ananav ul li a {
+   text-decoration: none;
+   position: relative;
+    color: beige;
+    padding: 1rem;
+    font-size: larger;
+    letter-spacing: 3px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif
+    
+  }
+  .yazi {
+    text-align: center;
+    margin-top: 15%;
+    font-size: larger;
+    
+    
+  }
+  body {
+    background-image: url(./galeri/bg.jpeg);
+    width: 100%;
+  }
+
+  .logo {
+    width: 3%;
+    float: left;
+    padding: 5px;
+  }
+
+  .logo img {
+    width: 100%;
+    margin-left: 1rem;
+  }
+
+  nav ul li a::after {
+    content: '';
+    position: absolute;
+    background-color: white;
+    height: 3px;
+    top: 45px;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    transition: all 1s;
+
+}
+
+
+nav ul li a:hover::after {
+    width: 100%;
+
+}
